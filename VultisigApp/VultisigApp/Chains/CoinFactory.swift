@@ -51,7 +51,7 @@ private extension CoinFactory {
             }
             return publicKey
 
-        case .arbitrum, .avalanche, .base, .bitcoin, .bitcoinCash, .blast, .bscChain, .cronosChain, .dash, .dogecoin, .dydx, .ethereum, .gaiaChain, .kujira, .litecoin, .mayaChain, .optimism, .polygon, .thorChain, .zksync:
+        case .arbitrum, .avalanche, .base, .bitcoin, .bitcoinCash, .blast, .bscChain, .cronosChain, .dash, .dogecoin, .dydx, .ethereum, .gaiaChain, .kujira, .litecoin, .mayaChain, .optimism, .polygon, .thorChain, .zcash, .zksync:
             let derivedKey = PublicKeyHelper.getDerivedPubKey(
                 hexPubKey: vault.pubKeyECDSA,
                 hexChainCode: vault.hexChainCode,
